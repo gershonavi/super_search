@@ -17,7 +17,7 @@ from requests_html import HTML
 from requests_html import HTMLSession
 import requests
 import copy
-import NoneDecoder
+import super_search.NoneDecoder
     
 class SuperSearch():
     def __init__(self, gpt_api_key, max_iterations_per_answer = 20, google_search_key=None, cse_id=None, use_google_search_api = False):
@@ -207,6 +207,7 @@ class SuperSearch():
             print(f"Raw answer: {answer}")
         
         json_error = False
+        answer_json = {}
         try:
             answer_json = json.loads(answer,cls=NoneDecoder)
         except:
@@ -235,7 +236,7 @@ class SuperSearch():
 
         location_data = 0
         if answer_json.get("Location") != 0:
-            location_data = get_location()
+            location_data = self.get_location()
 
         google_reply = None
         if answer_json.get("Google") and answer_json["Google"] != 'None':
@@ -318,13 +319,13 @@ class SuperSearch():
             },
         ]
 
-        iterations = 0
+        self.iterations = 0
         answer_json = {"Answer": None, "Google": None, "Scrap": None, 'Location':0 }
-        while ( (iterations < self.max_iterations_per_answer) and (answer_json.get("Answer") == None 
+        while ( (self.iterations < self.max_iterations_per_answer) and (answer_json.get("Answer") == None 
                                                or (answer_json.get("Google") is not None )
                                                or (answer_json.get("Scrap") is not None) ) ):
             answer_json, messages = self.chat_and_execute_code(query, messages,self.gpt_api_key,debug)
-            iterations += 1
+            
 
         return answer_json['Answer'], messages    
     
