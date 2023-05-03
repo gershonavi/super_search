@@ -18,7 +18,7 @@ from requests_html import HTMLSession
 import requests
 import copy
 from super_search.NoneDecoder import NoneDecoder
-    
+
 class SuperSearch():
     def __init__(self, gpt_api_key, max_iterations_per_answer = 20, google_search_key=None, cse_id=None, use_google_search_api = False):
         self.gpt_api_key = gpt_api_key
