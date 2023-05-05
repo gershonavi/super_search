@@ -1,5 +1,9 @@
+MANIFEST.in
 README.md
 setup.py
+super_search/NoneDecoder.py
+super_search/SuperSearch.py
+super_search/__init__.py
 super_search_gpt.egg-info/PKG-INFO
 super_search_gpt.egg-info/SOURCES.txt
 super_search_gpt.egg-info/dependency_links.txt
