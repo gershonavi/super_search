@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="super_search",
+    name="super_search_gpt",
     version="0.1.0",
     packages=find_packages(),
     install_requires=[
@@ -17,7 +17,7 @@ setup(
     description="SuperSearch is a powerful Python package for advanced search and data extraction. It leverages the GPT-4 AI model, Google search, and web scraping to efficiently obtain information on various topics. Ideal for developers needing quick, accurate responses to complex queries and data extraction, analysis, and summarization from multiple web sources. Easy to integrate, SuperSearch enhances functionality and user experience, saving time on manual research and enabling smarter, more effective solutions.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/your-package",
+    url="https://github.com/gershonavi/super_search",
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
