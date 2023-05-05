@@ -14,7 +14,7 @@ setup(
     ],
     author="Avi Gershon",
     author_email="gershonavi@gmail.com",
-    description="SuperSearch is a powerful and versatile Python package designed to facilitate advanced search and data extraction capabilities. By leveraging the GPT-4 AI model and integrating with Google search and web scraping techniques, SuperSearch offers an efficient and convenient way to obtain information on various topics. It is particularly useful for developers who require swift and accurate responses to complex queries, as well as for those who need to extract, analyze, and summarize data from multiple web sources. The package is easy to use and can be seamlessly integrated into a wide range of applications to enhance their functionality and user experience. With SuperSearch, you can quickly find the answers you need, save time on manual research, and focus on building smarter and more effective solutions.",
+    description="SuperSearch is a powerful Python package for advanced search and data extraction. It leverages the GPT-4 AI model, Google search, and web scraping to efficiently obtain information on various topics. Ideal for developers needing quick, accurate responses to complex queries and data extraction, analysis, and summarization from multiple web sources. Easy to integrate, SuperSearch enhances functionality and user experience, saving time on manual research and enabling smarter, more effective solutions.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     url="https://github.com/yourusername/your-package",
