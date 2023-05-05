@@ -17,7 +17,7 @@ SuperSearch is a powerful and versatile Python package designed to facilitate ad
 To install SuperSearch, simply run:
 
 \`\`\`
-pip install super_search
+pip install super_search_gpt
 \`\`\`
 
 ## Usage
