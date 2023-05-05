@@ -16,25 +16,21 @@ SuperSearch is a powerful and versatile Python package designed to facilitate ad
 
 To install SuperSearch, simply run:
 
-\`\`\`
+```
 pip install super_search_gpt
-\`\`\`
-
+```
 ## Usage
 
 Here's a quick example of how to use SuperSearch:
 
-\`\`\`python
+```
 from super_search import SuperSearch
-
 api_key = "your_openai_api_key"
 query = "What is the capital of France?"
-
 sup = SuperSearch(api_key)
 final_answer, messages = sup.get_answer(query, max_iterations=10, debug=True)
-
 print(f"Final Answer: {final_answer}")
-\`\`\`
+```
 
 For more information and advanced usage, please refer to the [documentation](https://github.com/gershonavi/your-package/wiki).
 
